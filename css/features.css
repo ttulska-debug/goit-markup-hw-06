@@ -1,0 +1,30 @@
+.features-container {
+    display: flex;
+}
+
+.features-list {
+    display:flex;
+    justify-content: flex-start;
+    gap: 24px;
+
+}
+
+.features-block {
+    display: flex;
+    flex-direction:column;
+    text-align: left;
+    gap:8px;
+    width: calc((100% - 72px)/ 4);
+}
+
+
+.features-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    height: 112px;
+
+}
