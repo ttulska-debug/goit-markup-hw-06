@@ -9,7 +9,7 @@
     left: 0;
     background-color:rgba(46, 47, 66, 0.4);
     z-index: 999999999;
-    opacity: 0; 
+    opacity: 0;  
     pointer-events: none; 
     visibility: hidden;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -17,20 +17,39 @@
 
 .backdrop.is-open {
     opacity: 1;
-    pointer-events: auto;
+    pointer-events: auto; 
     visibility: visible;
 }
 
 .modal-popup {
     position: relative;
     background-color: #FCFCFC;
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     padding-top: 72px;
-    padding-inline: 24px;
+    padding-inline: 16px;
     padding-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-popup{
+        padding-top: 72px;
+        padding-inline: 24px;
+        padding-bottom: 24px;
+        width: 408px;
+        min-height: 584px;
+    }   
+}
+
+@media screen and (min-width: 1158px) {
+    .modal-popup {
+        position: relative;
+        background-color: #FCFCFC;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    }
 }
 
 .modal-close-popup {
@@ -48,6 +67,7 @@
     cursor: pointer;
     transition: border, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .modal-close-popup:hover,
 .modal-close-popup:focus {
@@ -107,7 +127,7 @@
     border-radius: 4px;
     width: 100%;
     height: 40px;
-    max-width: 360px;
+    max-width: 256px;
     color:#2E2F42;
     padding-left: 38px;
     font-weight: 400;
@@ -115,6 +135,12 @@
     line-height: 1.17;
     letter-spacing: 0.04em;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+    .popup-input-text{
+        max-width: 360px;
+    }
 }
 
 .popup-input-text:hover,
@@ -149,7 +175,7 @@
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding: 8px 16px;
-    width: 360px;
+    width: 256px;
     height: 120px;
     color: #2E2F42;
     font-weight: 400;
@@ -161,13 +187,18 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+    .popup-textarea {
+        width: 360px;
+    }
+}
+
 .popup-textarea::placeholder{
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color:rgba(46, 47, 66, 0.4);
-    
 }
 
 .popup-textarea:hover,

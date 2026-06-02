@@ -3,20 +3,50 @@
 }
 
 .portfolio-list {
-    margin-top: 72px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap:24px;
+    flex-direction: column;
+    margin-top: 72px;
     row-gap: 48px;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap:24px;
+        row-gap: 72px;
+    }
+
+}
+
+
+@media screen and (min-width: 1158px) {
+    .portfolio-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 48px;
+    }
+
 }
 
 .portfolio-card {
     background-color: #FFFFFF;
-    width: calc((100% - 48px) / 3);
     text-align: left;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media screen and (min-width: 768px) {
+    .portfolio-card {
+        width: calc((100% - 24px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .portfolio-card {
+        width: calc((100% - 48px) / 3);
+    }
+}
+
 
 .portfolio-popup {
     position: relative;
