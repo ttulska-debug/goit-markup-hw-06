@@ -16,9 +16,7 @@
         column-gap:24px;
         row-gap: 72px;
     }
-
 }
-
 
 @media screen and (min-width: 1158px) {
     .portfolio-list {
@@ -26,7 +24,6 @@
         flex-wrap: wrap;
         row-gap: 48px;
     }
-
 }
 
 .portfolio-card {
@@ -46,7 +43,6 @@
         width: calc((100% - 48px) / 3);
     }
 }
-
 
 .portfolio-popup {
     position: relative;

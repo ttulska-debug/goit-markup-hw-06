@@ -20,7 +20,6 @@ li {
     padding:0;
 } 
 
-
 a {
     text-decoration: none;
     font-style:normal;
@@ -29,7 +28,6 @@ a {
 .color-accent {
     color:#4D5AE5;
 }
-
 
 .container {
     max-width: 320px;
@@ -52,7 +50,6 @@ a {
         padding-right: 15px;
   }
 }
-
 
 h2 {
     color: #2e2f42;
@@ -103,7 +100,6 @@ img {
     display: flex;
     padding: 96px 0;
 }
-
 
 @media screen and (min-width: 1158px) {
     .section {
